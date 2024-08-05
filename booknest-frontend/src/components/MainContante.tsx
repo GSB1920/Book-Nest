@@ -8,7 +8,7 @@ interface MainContentProps {
 const MainContent = ({ fullWidth = false, children }: MainContentProps) => {
     const paddingClass = fullWidth ? 'px-0' : 'px-8';  // Conditional class based on the fullWidth prop
     return (
-        <main className={`pt-20 pb-10 ${paddingClass} min-h-screen bg-gray-100`}>
+        <main className={`pb-10 ${paddingClass} min-h-screen bg-gray-100`}>
             <div className={`${ !fullWidth && "container mx-auto" } `}>
                 {children}
             </div>
