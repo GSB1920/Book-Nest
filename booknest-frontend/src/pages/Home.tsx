@@ -31,17 +31,12 @@ const HomePage = () => {
             className="flex flex-col space-y-8"
           >
             <div className="font-mono">
-              {/* <div className="text-6xl text-left">Enjoy</div>
-              <div className="text-6xl text-left">The Movies</div>
-              <div className="text-6xl text-left">Shows And</div>
-              <div className="text-6xl text-left">Songs</div>
-               */}
               <div className="text-6xl text-left">Find</div>
               <div className="text-6xl text-left">Happiness Through</div>
               <div className="text-6xl text-left">Curiosity</div>
             </div>
             <div className="text-left">
-              <Button>Read Now</Button>
+              <Button>See More</Button>
             </div>
           </div>
         </div>
@@ -101,7 +96,7 @@ const HomePage = () => {
               </div>
               <div className="py-4">
                 <Button>
-                  <div>See More</div>
+                  <div>Read Now</div>
                 </Button>
               </div>
             </div>
