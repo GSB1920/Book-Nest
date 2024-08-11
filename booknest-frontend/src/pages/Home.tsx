@@ -31,17 +31,12 @@ const HomePage = () => {
             className="flex flex-col space-y-8"
           >
             <div className="font-mono">
-              {/* <div className="text-6xl text-left">Enjoy</div>
-              <div className="text-6xl text-left">The Movies</div>
-              <div className="text-6xl text-left">Shows And</div>
-              <div className="text-6xl text-left">Songs</div>
-               */}
               <div className="text-6xl text-left">Find</div>
               <div className="text-6xl text-left">Happiness Through</div>
               <div className="text-6xl text-left">Curiosity</div>
             </div>
             <div className="text-left">
-              <Button>Read Now</Button>
+              <Button>See More</Button>
             </div>
           </div>
         </div>
@@ -101,8 +96,110 @@ const HomePage = () => {
               </div>
               <div className="py-4">
                 <Button>
-                  <div>See More</div>
+                  <div>Read Now</div>
                 </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Latest Book Seciton Starts here  */}
+        <div className="border-indigo-500/100 border-2 bg-regal-red">
+          <div className="w-full flex justify-center py-10">
+            <ul className="flex space-x-8 border-b-2 border-transparent py-2 border-b-4 border-white">
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold border-b-4 border-yellow-500"
+                >
+                  Fiction
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Nerrative
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Novel
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Non-Fiction
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Mystery
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Science-Fiction
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Fantasy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-yellow-600 text-lg font-semibold hover:border-b-2 hover:border-yellow-500"
+                >
+                  Horror
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-center px-60 space-y-10 py-20">
+            <div className="flex justify-between">
+              <div className="text-white text-bold text-3xl">
+              Art of Fiction
+              </div>
+              <div className="text-yellow-600">
+                See More  
+              </div>  
+            </div>
+            <div className="text-white space-y-4">
+              <img
+                className="h-80 w-64"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBcO26kdi60I4raBpJSMFyJMX2AzPfb2D9Aw&s"
+                alt="New Arrivals 1"
+              />
+              <div className="w-64 text-center text-white text-3xl text-bold">
+                Book Name
+                <div className="w-64 text-center text-white text-xl text-bold">
+                  Support Text
+                </div>
+                <div className="w-64 mt-2 text-centre"> 
+                {/* // Need to fix this issue start lighed left . It should in the centre */}
+                  <img
+                    src="https://w7.pngwing.com/pngs/589/360/png-transparent-star-customer-service-review-rating-star-text-logo-computer-wallpaper.png"
+                    alt=""
+                    className="h-6"
+                  />
+                </div>
               </div>
             </div>
           </div>
