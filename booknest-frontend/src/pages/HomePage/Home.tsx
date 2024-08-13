@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
-import MainContent from "../components/MainContante";
-import Footer from "../components/Footer";
-import banner from "../assets/images/logo.png";
+import Header from "../../components/Header";
+import MainContent from "../../components/MainContante";
+import Footer from "../../components/Footer";
+import banner from "../../assets/images/logo.png";
 import { Clock, Command, Star, ArrowRight } from "react-feather";
-import Button from "../components/common/button";
+import Button from "../../components/common/button";
 const HomePage = () => {
   return (
     <div>
