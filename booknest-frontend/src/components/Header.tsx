@@ -27,7 +27,7 @@ const Header: React.FC = () => {
               <Menu as="div" className="relative inline-block text-left">
                 <div>
                   <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
-                    {userName}
+                    Hi, {userName}
                     <svg
                       className="ml-2 -mr-1 h-5 w-5"
                       xmlns="http://www.w3.org/2000/svg"
