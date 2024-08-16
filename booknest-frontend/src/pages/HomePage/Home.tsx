@@ -43,7 +43,7 @@ const HomePage = () => {
           </div>
         </div>
         {/* Arrival Sections Starts */}
-        <div className="border-indigo-500/100 border-2 md:container md:mx-auto">
+        <div className="md:container md:mx-auto">
           <div className="flex justify-center space-x-12 py-20">
             <img
               className="h-96 w-80"
@@ -105,7 +105,7 @@ const HomePage = () => {
           </div>
         </div>
         {/* Latest Book Seciton Starts here  */}
-        <div className="border-indigo-500/100 border-2 bg-regal-red">
+        <div className="bg-regal-red">
           <div className="w-full flex justify-center py-10">
             <ul className="flex space-x-8 border-b-2 border-transparent py-2 border-b-4 border-white">
               <li>
@@ -177,6 +177,33 @@ const HomePage = () => {
           <LatestBooks />
         </div>
         <NewsLetter />
+        <div className="md:container md:mx-auto">
+          <div className="flex justify-center space-x-12 py-20">
+            <img
+              className="h-96 w-80"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBcO26kdi60I4raBpJSMFyJMX2AzPfb2D9Aw&s"
+              alt="New Arrivals 1"
+            />
+            <img
+              className="h-96 w-80"
+              src="https://bukovero.com/wp-content/uploads/2016/07/Harry_Potter_and_the_Cursed_Child_Special_Rehearsal_Edition_Book_Cover.jpg"
+              alt="New Arrivals 2"
+            />
+            <div className="flex-col items-center justify-center my-auto">
+              {/* <div className="">NEW ARRIVALS</div> */}
+              <h1 className="w-24 h-24 rounded-full bg-regal-red text-white text-5xl flex items-center justify-center">01</h1>
+              <h1 className="text-6xl font-bold tracking-widest py-2">
+                C O M I N G <br /> S O O N
+              </h1>
+              <div className="flex flox-row space-x-8 py-3">
+                <p className="text-ellipsis w-80">
+                  It is a long established fact that a reader will NOT be
+                  distracted by the readable content of a page when looking
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </MainContent>
       ̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦
       <Footer />
