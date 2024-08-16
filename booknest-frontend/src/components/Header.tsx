@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, Transition } from "@headlessui/react"; // For the dropdown
+import { Button, Menu, Transition } from "@headlessui/react"; // For the dropdown
 import { Fragment } from "react";
 import { User } from "react-feather";
 
@@ -23,86 +23,90 @@ const Header: React.FC = () => {
         {/* Profile Information or Sign in/Get started */}
         <div className="flex items-center">
           {isLoggedIn ? (
-            <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
-                  {userName}
-                  <svg
-                    className="ml-2 -mr-1 h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </Menu.Button>
-              </div>
+            <div className="flex space-x-4">
+              <Menu as="div" className="relative inline-block text-left">
+                <div>
+                  <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                    {userName}
+                    <svg
+                      className="ml-2 -mr-1 h-5 w-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </Menu.Button>
+                </div>
 
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  <div className="py-1">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } block px-4 py-2 text-sm`}
-                        >
-                          Profile
-                        </a>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } block px-4 py-2 text-sm`}
-                        >
-                          Settings
-                        </a>
-                      )}
-                    </Menu.Item>
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={`${
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700"
-                          } block px-4 py-2 text-sm`}
-                        >
-                          Log out
-                        </a>
-                      )}
-                    </Menu.Item>
-                  </div>
-                </Menu.Items>
-              </Transition>
-            </Menu>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="py-1">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={`${
+                              active
+                                ? "bg-gray-100 text-gray-900"
+                                : "text-gray-700"
+                            } block px-4 py-2 text-sm`}
+                          >
+                            Profile
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={`${
+                              active
+                                ? "bg-gray-100 text-gray-900"
+                                : "text-gray-700"
+                            } block px-4 py-2 text-sm`}
+                          >
+                            Settings
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={`${
+                              active
+                                ? "bg-gray-100 text-gray-900"
+                                : "text-gray-700"
+                            } block px-4 py-2 text-sm`}
+                          >
+                            Log out
+                          </a>
+                        )}
+                      </Menu.Item>
+                    </div>
+                  </Menu.Items>
+                </Transition>
+              </Menu>
+              <div className="text-2xl">|</div>
+              <div className="text-xl py-1 ">Help !</div>
+            </div>
           ) : (
             <>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
               >
@@ -113,7 +117,15 @@ const Header: React.FC = () => {
                 className="text-black bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
               >
                 Get started
-              </a>
+              </a> */}
+              <div className="flex space-x-4">
+                <Button className="rounded bg-white-600 py-2 px-4 text-sm text-Black data-[hover]:border-sky-500 border-2">
+                  Log-in
+                </Button>
+                <Button className="rounded bg-white-600 py-2 px-4 text-sm text-Black data-[hover]:border-sky-500 border-2">
+                  Get Started
+                </Button>
+              </div>
             </>
           )}
         </div>
@@ -123,22 +135,22 @@ const Header: React.FC = () => {
       <div className="flex justify-between items-center mt-4">
         {/* Quick Links */}
         <div className="flex space-x-8">
-          <a href="#" className="text-gray-700 hover:text-primary-700">
+          <a href="#" className="text-black hover:underline">
             Home
           </a>
-          <a href="#" className="text-gray-700 hover:text-primary-700">
+          <a href="#" className="text-black hover:underline">
             Company
           </a>
-          <a href="#" className="text-gray-700 hover:text-primary-700">
+          <a href="#" className="text-black hover:underline">
             Marketplace
           </a>
-          <a href="#" className="text-gray-700 hover:text-primary-700">
+          <a href="#" className="text-black hover:underline">
             Features
           </a>
-          <a href="#" className="text-gray-700 hover:text-primary-700">
+          <a href="#" className="text-black hover:underline">
             Team
           </a>
-          <a href="#" className="text-gray-700 hover:text-primary-700">
+          <a href="#" className="text-black hover:underline">
             Contact
           </a>
         </div>
