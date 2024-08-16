@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         'regal-red': '#3C0E0D',
       },
+      backgroundImage: {
+        'newsLetter': "url('https://www.free-css.com/assets/files/free-css-templates/preview/page280/dbi/assets/images/newsletter-bg.png')",
+      }
     },
   },
   plugins: [],

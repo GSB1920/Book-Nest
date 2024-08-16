@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/Home'
+import HomePage from '../pages/HomePage/Home'
 import { baseURL } from './baseRoutes';
 
 const AppRoutes = ()=> {

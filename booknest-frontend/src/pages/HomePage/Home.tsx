@@ -1,10 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
-import MainContent from "../components/MainContante";
-import Footer from "../components/Footer";
-import banner from "../assets/images/logo.png";
+import Header from "../../components/Header";
+import MainContent from "../../components/MainContante";
+import Footer from "../../components/Footer";
+import banner from "../../assets/images/logo.png";
 import { Clock, Command, Star, ArrowRight } from "react-feather";
-import Button from "../components/common/button";
+import Button from "../../components/common/button";
+import LatestBooks from "./latestBooks";
+import NewsLetter from "./newsLetter";
 const HomePage = () => {
   return (
     <div>
@@ -172,38 +174,9 @@ const HomePage = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col justify-center px-60 space-y-10 py-20">
-            <div className="flex justify-between">
-              <div className="text-white text-bold text-3xl">
-              Art of Fiction
-              </div>
-              <div className="text-yellow-600">
-                See More  
-              </div>  
-            </div>
-            <div className="text-white space-y-4">
-              <img
-                className="h-80 w-64"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBcO26kdi60I4raBpJSMFyJMX2AzPfb2D9Aw&s"
-                alt="New Arrivals 1"
-              />
-              <div className="w-64 text-center text-white text-3xl text-bold">
-                Book Name
-                <div className="w-64 text-center text-white text-xl text-bold">
-                  Support Text
-                </div>
-                <div className="w-64 mt-2 text-centre"> 
-                {/* // Need to fix this issue start lighed left . It should in the centre */}
-                  <img
-                    src="https://w7.pngwing.com/pngs/589/360/png-transparent-star-customer-service-review-rating-star-text-logo-computer-wallpaper.png"
-                    alt=""
-                    className="h-6"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <LatestBooks />
         </div>
+        <NewsLetter />
       </MainContent>
       ̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦̦
       <Footer />
